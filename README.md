@@ -26,18 +26,19 @@ API 서버는 `http://127.0.0.1:8080`에서 실행되어야 합니다.
 ### 필수 조건
 
 - Node.js 18+ 
+- pnpm (패키지 매니저)
 - API 서버가 `127.0.0.1:8080`에서 실행 중이어야 함
 
 ### 설치 및 실행
 
 1. 프로젝트 클론/다운로드 후 의존성 설치:
 ```bash
-npm install
+pnpm install
 ```
 
 2. 개발 서버 시작:
 ```bash
-npm run dev
+pnpm dev
 ```
 
 3. 브라우저에서 `http://localhost:5173` 접속
@@ -46,7 +47,7 @@ npm run dev
 
 프로덕션 빌드:
 ```bash
-npm run build
+pnpm build
 ```
 
 ## 프로젝트 구조
