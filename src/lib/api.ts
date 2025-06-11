@@ -7,7 +7,8 @@ import type {
   ErrorResponse 
 } from './types';
 
-const API_BASE_URL = 'http://127.0.0.1:8080';
+// 개발 환경에서는 프록시 사용, 프로덕션에서는 실제 API URL 사용
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
 
 class ApiError extends Error {
   constructor(public status: number, public message: string) {
